@@ -13,7 +13,7 @@ function thisPage(){
 
 strPage = thisPage();
 
-if (strPage == "") { strPage = "index.htm" };
+if (strPage == "") { strPage = "index.html" };
 
 /* Namn f�r engelska och svenska sidor */
 
@@ -28,8 +28,8 @@ if (strPage.substring(0, 3) != "en-") {
 
 $(document).ready(function(){
 	$("a[href='"+strPage+"']").addClass("dennaSida").attr("href", "#");
-	$("#sprakval a[href='en-index.htm']").attr("href", strEnPage);
-	$("#sprakval a[href='index.htm']").attr("href", strSvPage);
+	$("#sprakval a[href='en-index.html']").attr("href", strEnPage);
+	$("#sprakval a[href='index.html']").attr("href", strSvPage);
 	
 	$('div.product a[href]').lightBox();
 
